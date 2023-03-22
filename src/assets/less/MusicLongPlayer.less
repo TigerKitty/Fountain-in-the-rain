@@ -1,0 +1,46 @@
+.music-player-background {
+  position: absolute;
+  // top: 400px;
+  // left: 350px;
+}
+
+.music-player {
+  width: 23.75rem;
+  height: 23.75rem;
+  box-sizing: border-box;
+  border: 0.125rem solid #B3B3B3;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 480px;
+  top: 480px;
+}
+
+.music-long-player {
+  width: 21.25rem;
+  height: 21.25rem;
+  border-radius: 50%;
+  animation: rotate infinite linear 25s;
+}
+
+.music-player::before {
+  content: "";
+  position: absolute;
+  width: 21.25rem;
+  height: 21.25rem;
+  border-radius: 50%;
+  filter: blur(7.875rem);
+  background-image: radial-gradient(white, silver);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

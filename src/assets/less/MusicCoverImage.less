@@ -1,0 +1,63 @@
+.music-cover {
+    position: absolute;
+    right: 330px;
+    top: 120px;
+    width: 800px;
+    height: 800px;
+}
+
+.music-cover-image {
+    position: absolute;
+    z-index: 10;
+    transform: scale(0.9, 0.9)
+}
+
+.music-cover-lp {
+    position: absolute;
+    z-index: 9;
+    transform: scale(0.8, 0.8)
+}
+
+.music-progress {
+    position: absolute;
+    top: 900px;
+}
+
+.music-progress-messsage {
+    position: relative;
+    animation: progress 252s linear;
+}
+
+.music-progress-icon-rain {
+    position: relative;
+    top: -40px;
+    right: 10px;
+}
+
+.music-progress-icon-umbrella {
+    position: relative;
+    top: -10px;
+    right: 50px;
+}
+
+.music-progress-line {
+    position: absolute;
+    width: 1100px;
+    height: 5px;
+    background-color: #DCE2F1;
+    border-radius: 90%;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+}
+
+.music-progress-name {
+    position: relative;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #DCE2F1;
+}
+
+@keyframes progress {
+    0% { left: 0px }
+    100% { left: 980px }
+}
+
